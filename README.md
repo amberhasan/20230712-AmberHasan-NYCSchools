@@ -3,8 +3,20 @@
 
 ![image](https://github.com/amberhasan/20230712-AmberHasan-NYCSchools/assets/12038406/e5efa367-388f-4b14-88b5-cb8db03b119a)
 
+# Features
+1. Fetching data from two different APIs (SCHOOL_DATA_API and DETAIL_DATA_API) using Volley library.
+2. Parsing JSON responses from the APIs to extract relevant data.
+3. Displaying a progress dialog while fetching data.
+4. Handling network errors and displaying error messages.
+5. Creating School and Detail model classes to represent the fetched data.
+6. Implementing a custom SchoolAdapter to display the list of schools in a ListView.
+7. Handling item click events in the ListView to open a detail activity (DetailActivity) with corresponding data.
+8. Passing data between activities using Intent extras.
+9. Implementing a method (findDetailByDBN) to find the corresponding Detail object based on the school's DBN value.
+10. Setting the adapter for the ListView to display the list of schools.
 
-Instructions
+
+# Instructions
 Coding Challenge: NYC Schools
 
 GOAL : Verify candidate can provide a technical solution and follow instructions
