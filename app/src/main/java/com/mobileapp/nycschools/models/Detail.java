@@ -2,24 +2,45 @@ package com.mobileapp.nycschools.models;
 
 import java.io.Serializable;
 
-public class Detail  implements Serializable {
-    public String dbn, num_of_sat_test_takers, sat_critical_reading_avg_score, sat_math_avg_score, sat_writing_avg_score;
+public class Detail implements Serializable {
+    private String dbn;
+    private String numOfSatTestTakers;
+    private String satCriticalReadingAvgScore;
+    private String satMathAvgScore;
+    private String satWritingAvgScore;
 
-    public Detail(String dbn, String num_of_sat_test_takers, String sat_critical_reading_avg_score, String sat_math_avg_score, String sat_writing_avg_score) {
+    public Detail(String dbn, String numOfSatTestTakers, String satCriticalReadingAvgScore, String satMathAvgScore, String satWritingAvgScore) {
         this.dbn = dbn;
-        this.num_of_sat_test_takers = num_of_sat_test_takers;
-        this.sat_critical_reading_avg_score = sat_critical_reading_avg_score;
-        this.sat_math_avg_score = sat_math_avg_score;
-        this.sat_writing_avg_score = sat_writing_avg_score;
+        this.numOfSatTestTakers = numOfSatTestTakers;
+        this.satCriticalReadingAvgScore = satCriticalReadingAvgScore;
+        this.satMathAvgScore = satMathAvgScore;
+        this.satWritingAvgScore = satWritingAvgScore;
     }
 
-    public Detail() {
+    public String getDbn() {
+        return dbn;
     }
 
-    public String getDetailInfo(){
-        return "# of SAT test takers: " + num_of_sat_test_takers
-                +"\n\nReading avg score: " + sat_critical_reading_avg_score
-                +"\n\nMath avg score: " + sat_math_avg_score
-                +"\n\nWriting avg score: " + sat_writing_avg_score;
+    public String getNumOfSatTestTakers() {
+        return numOfSatTestTakers;
+    }
+
+    public String getSatCriticalReadingAvgScore() {
+        return satCriticalReadingAvgScore;
+    }
+
+    public String getSatMathAvgScore() {
+        return satMathAvgScore;
+    }
+
+    public String getSatWritingAvgScore() {
+        return satWritingAvgScore;
+    }
+
+    public String getDetailInfo() {
+        return "# of SAT test takers: " + numOfSatTestTakers
+                + "\nReading avg score: " + satCriticalReadingAvgScore
+                + "\nMath avg score: " + satMathAvgScore
+                + "\nWriting avg score: " + satWritingAvgScore;
     }
 }
